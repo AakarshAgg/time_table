@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in CSS Q6</title>
+    <style>
+        .outer {
+            border: 2px solid black;
+        }
+        .timetable {
+            background-color: #5da3fa;
+            padding: 8px;
+            margin:10px 8px 40px 8px;
+            border: 2px solid black;
+        }
+        .sec-1 {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            background-color: #ff6666;
+            font-weight: 700;
+        }
+        .sec-2{
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+        }
+
+        .sec-1>div {
+            border: 1.5px dotted black;
+            padding: 25px 0px;
+        }
+        .purple{
+            background-color: #8d3daf;
+            font-weight: 700;
+        }
+        .light-green{
+            background-color: #03c6c7;
+        }
+        .green{
+            background-color: #1faa59;
+            font-weight: 700;
+        }
+        .grey{
+            background-color: #cad5e2;
+        }
+        .span-1{
+            grid-column: 7/9;
+        }
+        div{
+            text-align: center;
+            font-size: 15px;
+        }
+        .sec-2>div{
+            border: 1.5px dotted black;
+            padding: 15px 0px;
+        }
+        .span-2{
+            grid-column: 2/4;
+        }
+        .yellow{
+            background-color: #edc126;
+            font-weight: 700;
+            border-bottom: 0px;
+        }
+        #rem{
+            border-bottom:none ;
+            border-top:none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <h1>School Timetable</h1>
+        <div class="timetable">
+                <div class="sec-1">
+                    <div>Time</div>
+                    <div>08:00 Am - 09:00 Am</div>
+                    <div>09:00 Am - 10:00 Am</div>
+                    <div>10:00 Am - 11:00 Am</div>
+                    <div>11:00 Am - 12:00 Pm</div>
+                    <div>12:00 Pm - 02:00 Pm</div>
+                    <div>02:00 Pm - 03:00 Pm</div>
+                    <div>03:00 Pm - 04:00 Pm</div>
+                </div>
+                <div class="sec-2 ">
+                    <div class="purple">Monday</div>
+                    <div class="light-green">English</div>
+                    <div class="light-green">Biology</div>
+                    <div class="light-green">Physics</div>
+                    <div class="light-green">Chemistry</div>
+                    <div class="yellow" id="rem">L</div>
+                    <div class="grey span-1">Chemistry LAB</div>
+                </div>
+                <div class="sec-2">
+                    <div class="purple">Tuesday</div>
+                    <div class="grey span-2">Biology Lab</div>
+                    <div class="light-green">Physics</div>
+                    <div class="light-green">Chemistry</div>
+                    <div class="yellow" id="rem">U</div>
+                    <div class="light-green">English</div>
+                    <div class="light-green">Biology</div>
+                </div>
+                <div class="sec-2">
+                    <div class="purple">Wednesday</div>
+                    <div class="light-green">English</div>
+                    <div class="light-green">Biology</div>
+                    <div class="light-green">Physics</div>
+                    <div class="light-green">Chemistry</div>
+                    <div class="yellow" id="rem">N</div>
+                    <div class="green span-1">Games</div>
+                </div>
+                <div class="sec-2">
+                    <div class="purple">Thursday</div>
+                    <div class="grey span-2">Biology Lab</div>
+                    <div class="light-green">Physics</div>
+                    <div class="light-green">Chemistry</div>
+                    <div class="yellow" id="rem">C</div>
+                    <div class="light-green">English</div>
+                    <div class="light-green">Biology</div>
+                </div>
+                <div class="sec-2">
+                    <div class="purple">Friday</div>
+                    <div class="light-green">English</div>
+                    <div class="light-green">Biology</div>
+                    <div class="light-green">Physics</div>
+                    <div class="light-green">Chemistry</div>
+                    <div class="yellow" id="rem">H</div>
+                    <div class="grey span-1">Physics LAB</div>
+                </div>
+                <div class="sec-2">
+                    <div class="purple">Saturday</div>
+                    <div class="light-green">English</div>
+                    <div class="light-green">Biology</div>
+                    <div class="light-green">Physics</div>
+                    <div class="light-green">Chemistry</div>
+                    <div class="yellow" id="rem">Break</div>
+                    <div class="green span-1">LET OFF</div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
